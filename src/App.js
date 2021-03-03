@@ -20,7 +20,7 @@ function App() {
       </div>
       <div className="content">
       <h3>Customer Experience</h3>
-      <h1>Extract Meaning & drive action</h1>
+      <h2>Extract Meaning & Drive Action</h2>
 
       <p>Customer data doesn't only come in the form of surveys; it's also in chats, call transcripts, social media, online reviews, and other sources. No matter what form your CX data takes, we can extract meaning and help you drive action.</p>
 

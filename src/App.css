@@ -55,13 +55,13 @@ img{
   content: '\f061';
   font-family: 'FontAwesome';
   font-weight: normal;
-  right: -3em;
+  left: -3em;
   transition: 0.4s;
   color: #fff;
 }
 
 .btn-primary:hover:after{
-  right: 2em;
+  left: 2em;
 } 
 
 
