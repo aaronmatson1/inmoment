@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
+import $ from 'jquery'
 
 
 
@@ -27,7 +28,7 @@ function App() {
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
-            Feedback Lifecycle Management <i class="fa fa-arrow-down"></i>
+            Feedback Lifecycle Management <i class="fa fa-arrow-down rotate"></i>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body><h4> Lorem Ipsum</h4>
@@ -40,7 +41,7 @@ function App() {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-            Integrations <i class="fa fa-arrow-down"></i>
+            Integrations <i class="fa fa-arrow-down rotate"></i>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body><h4> Lorem Ipsum</h4>
@@ -53,7 +54,7 @@ function App() {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2">
-            Multimedia Feedback <i class="fa fa-arrow-down"></i>
+            Multimedia Feedback <i class="fa fa-arrow-down rotate"></i>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body><h4> Lorem Ipsum</h4>
@@ -64,14 +65,18 @@ function App() {
                         <Button variant='primary' size="sm">See More</Button></Card.Body>
             </Accordion.Collapse>
           </Card>
-        </Accordion>
-
+        </Accordion>      
 
         </div>
       
-
+      
     </div>
+    
   );
+
+    
+
 }
+$(".rotate").click(function(){$(this).toggleClass("down")})
 
 export default App;

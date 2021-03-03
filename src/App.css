@@ -2,6 +2,7 @@
   text-align: left;
   margin:0;
   padding:20px;
+  width:100%;
 }
 
 .app p{
@@ -15,6 +16,10 @@ h3{
 h4{
   color:#8B3CE6;
   font-size: 1.15em;
+}
+
+img{
+  width: -webkit-fill-available;
 }
 
 .card-header{
@@ -42,6 +47,7 @@ h4{
   background: #af72f9;
   color: #fff;
   padding: 1em 5em;
+  border: 3px solid #7831ce;
 }
 
 .btn-primary:after{
@@ -57,6 +63,25 @@ h4{
 .btn-primary:hover:after{
   right: 2em;
 } 
+
+
+.fa fa-arrow-down:active{
+  transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+}
+
+.rotate {
+  -moz-transition: all .25s linear;
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.rotate.down{
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
 
 
 /*-------Mobile Styling -----*/
@@ -81,14 +106,15 @@ h4{
   .hero{
     background-image: url(./assets/tablet.jpg);
     
-  }
-  
+  }   
 
-  
   .accordion-item {
     cursor:pointer;
+  }  
+
+  .accordion{
+    max-width:border-box;
   }
-  
 
 }
 
